@@ -1,0 +1,128 @@
+.container {
+    display: grid;
+    height: auto;
+    grid-gap: 1rem;
+    position: relative;
+}
+    
+.header {
+    grid-column: 1 / 6;
+}
+    
+.menu {
+    grid-column: 7 / 12;
+}
+    
+.content-1 {
+    grid-column: 1 / 12;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 100px;
+    text-align: center;
+    align-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.footer {
+    grid-column: 1 / 12;
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px){
+    .content-1 {
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+}
+/*Mobile*/
+@media screen and (max-width: 480px){
+    .header {
+     grid-column: 1 / 12;
+     text-align: center;
+    }
+    .menu {
+      grid-column: 1 / 12;
+      text-align: center;
+    }
+    .content-1 {
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+}
+
+  
+/*Estilos de la Página*/
+  
+body {
+    padding: 200px;
+    background-color: #ffffff;
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Spartan', sans-serif;
+}
+
+    
+.header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: 'Spartan', sans-serif;
+    border: transparent;
+}
+  
+#encabezado {
+    font-size: 2.8vw;
+} 
+
+#encabezado2 {
+font-size: 1.5vw;
+}  
+
+.menu {
+    background-color: #ffffff;
+    font-family: 'Spartan', sans-serif;
+    font-size: 2vw;
+}
+
+.content-1 {
+    background-color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #ffffff;
+    font-family: 'Spartan', sans-serif;
+    font-size: 1vw;
+}
+  
+.pie {
+    text-align: left;
+    padding-right: 21vw;
+    padding-left: 5em;
+}
+  
+.icons {
+    text-align: center;
+}
+  
+.piediseño {
+    text-align: right;
+    padding-left: 26vw;
+}
+
+a:link {
+    color: rgba(0, 0, 0);
+}
+  
+a:hover {
+   color: rgba(136, 136, 136, 0.666);
+}
+
+a:visited {
+    color: rgba(0, 0, 0);
+}
