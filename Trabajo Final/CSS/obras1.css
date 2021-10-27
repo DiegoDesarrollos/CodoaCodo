@@ -1,0 +1,157 @@
+.container {
+    display: grid;
+    height: auto;
+    grid-gap: 1rem;
+    position: relative;
+}
+    
+.header {
+    grid-column: 1 / 6;
+}
+    
+.menu {
+    grid-column: 7 / 12;
+}
+    
+.content-1 {
+    grid-column: 1 / 12;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 100px;
+    text-align: center;
+    align-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.container-1 {
+	grid-column: 1 / 12;
+	display: grid;
+	grid-template-columns: 2fr 2fr 2fr;
+}
+.pie {
+	grid-column: 1 / 2;
+}
+.icons {
+	grid-column: 2 / 2;
+}
+.piediseño {
+	grid-column: 8 / 12;
+}
+  
+
+/*Estilos de la Página*/
+  
+body {
+    padding: 200px;
+    background-color: #ffffff;
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Spartan', sans-serif;
+}
+
+    
+.header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: 'Spartan', sans-serif;
+    border: transparent;
+}
+  
+#encabezado {
+    font-size: 2.8vw;
+} 
+
+#encabezado2 {
+font-size: 1.5vw;
+}  
+
+.menu {
+    background-color: #ffffff;
+    font-family: 'Spartan', sans-serif;
+    font-size: 2vw;
+}
+
+.content-1 {
+    background-color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-1 {
+	background-color: #ffffff;
+	font-family: 'Spartan', sans-serif;
+	font-size: 1.3vw;
+	text-align: center;
+}
+.pie {
+	text-align: left;
+}
+.icons {
+	text-align: right;
+}
+.piediseño {
+	text-align: right;
+}
+
+a:link {
+    color: rgba(0, 0, 0);
+}
+  
+a:hover {
+   color: rgba(136, 136, 136, 0.666);
+}
+
+a:visited {
+    color: rgba(0, 0, 0);
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px){
+    .content-1 {
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+}
+/*Mobile*/
+@media screen and (max-width: 480px){
+    .header {
+        grid-column: 1 / 12;
+        text-align: center;
+    }
+    .menu {
+        grid-column: 1 / 12;
+        text-align: center;
+    }
+    #encabezado {
+        font-size: 8vw;
+    } 
+    #encabezado2 {
+        font-size: 6vw;
+    }  
+    .menu {
+        font-size: 6vw;
+    }
+      
+    .pie {
+        grid-column: 1 / 12;
+        text-align: center;
+        font-size: 4vw;
+        padding-bottom: 1vw;
+    }
+    .icons {
+        grid-column: 1 / 12;
+        text-align: center;
+        font-size: 8vw;
+        padding-bottom: 1vw;
+    }
+    .piediseño {
+        grid-column: 1 / 12;
+        text-align: center;
+        font-size: 4vw;
+    }
+}

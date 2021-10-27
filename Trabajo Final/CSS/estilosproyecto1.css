@@ -1,0 +1,178 @@
+
+.container {
+  display: grid;
+  height: auto;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+  grid-gap: 1rem;
+}
+  
+.header {
+  grid-column: 1 / 6;
+}
+  
+.menu {
+  grid-column: 7 / 12;
+}
+  
+.content-1 {
+  grid-column: 1 / 12;
+}
+
+.content-2 {
+  grid-column: 1 / 12;
+}
+
+.container-1 {
+  grid-column: 1 / 12;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+.pie {
+  grid-column: 1 / 2;
+}
+.icons {
+  grid-column: 2 / 2;
+}
+.piediseño {
+  grid-column: 8 / 12;
+}
+
+
+/*Estilos de la Página*/
+
+body {
+  padding: 200px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Spartan', sans-serif;
+}
+  
+.item {
+  color: #ffffff;
+  border-radius: 4px;
+  border: 6px solid #171717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+  
+.header {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-family: 'Spartan', sans-serif;
+  border: transparent;
+}
+
+#encabezado {
+  font-size: 2.8vw;
+} 
+#encabezado2 {
+  font-size: 1.5vw;
+}  
+.menu {
+  background-color: #ffffff;
+  font-family: 'Spartan', sans-serif;
+  font-size: 2vw;
+}
+  
+.content-1 {
+  background-color: #ffffff;
+}
+.content-2{
+  display: none;
+}
+
+img {
+  max-width: 80%;
+  display:block;
+  margin:auto;
+  height: auto;
+}
+
+  
+.container-1 {
+  background-color: #ffffff;
+  font-family: 'Spartan', sans-serif;
+  font-size: 1.3vw;
+  text-align: center;
+}
+.pie {
+  text-align: left;
+}
+.icons {
+  text-align: right;
+}
+.piediseño {
+  text-align: right;
+}
+
+
+
+a:link {
+  color: rgba(0, 0, 0);
+}
+
+a:hover {
+ color: rgba(136, 136, 136, 0.666);
+}
+
+a:visited {
+  color: rgba(0, 0, 0);
+}
+
+
+/*Media Query para diferentes pantallas*/
+
+@media screen and (max-width: 480px){
+  .header {
+   grid-column: 1 / 12;
+   text-align: center;
+  }
+  .menu {
+    grid-column: 1 / 12;
+    text-align: center;
+  }
+  
+  #encabezado {
+    font-size: 8vw;
+  } 
+  #encabezado2 {
+    font-size: 6vw;
+  }  
+  .menu {
+    font-size: 6vw;
+  }
+
+  .content-1 {
+    display: none;
+  }
+  
+  .content-2{
+    max-width: 100%;
+    display:block;
+    margin:auto;
+    height: auto;
+  }
+
+  .pie {
+    grid-column: 1 / 12;
+    text-align: center;
+    font-size: 4vw;
+    padding-bottom: 1vw;
+  }
+  .icons {
+    grid-column: 1 / 12;
+    text-align: center;
+    font-size: 8vw;
+    padding-bottom: 1vw;
+  }
+  .piediseño {
+    grid-column: 1 / 12;
+    text-align: center;
+    font-size: 4vw;
+  }
+}
